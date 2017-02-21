@@ -11,4 +11,9 @@ public class Figura
     {
         return area;
     }
+    
+    void calcularArea()
+    {
+        System.out.println("Ops");
+    }
 }
