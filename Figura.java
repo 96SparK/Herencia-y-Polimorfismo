@@ -16,4 +16,9 @@ public class Figura
     {
         System.out.println("Ops");
     }
+    
+    public String dimeInfo()
+    {
+        return ""+area;
+    }
 }
