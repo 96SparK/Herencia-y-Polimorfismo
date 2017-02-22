@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class Principal extends Figura
 {
     public static void main(String []args)
@@ -19,13 +22,23 @@ public class Principal extends Figura
         figuras[1] = cuadrado;
         figuras[2] = circulo;
      
-        for(Figura fig:figuras)
+        ArrayList<Figura> figs;
+        figs = new ArrayList<Figura>();
+        
+        for(Figura f:figuras)
         {
+            figs.add(f);
+        }
+        Iterator<Figura> it = figs.iterator();
+        while(it.hasNext())
+        {
+            Figura fig = it.next();
             fig.calcularArea();
         }
-       
-        for(Figura fig:figuras)
+        it = figs.iterator();
+        while(it.hasNext())
         {
+            Figura fig = it.next();
             System.out.println("El area de la figura es: "+fig.accedeArea());
         }
     }
