@@ -18,14 +18,15 @@ public class Principal extends Figura
         figuras[0] = triangulo;
         figuras[1] = cuadrado;
         figuras[2] = circulo;
-        
-        for(int i = 0; i < figuras.length;i++)
+     
+        for(Figura fig:figuras)
         {
-            figuras[i].calcularArea();
+            fig.calcularArea();
         }
-        for(int i = 0; i < figuras.length;i++)
+       
+        for(Figura fig:figuras)
         {
-             System.out.println("El area de la figura es: "+figuras[i].accedeArea());
+            System.out.println("El area de la figura es: "+fig.accedeArea());
         }
     }
 }
