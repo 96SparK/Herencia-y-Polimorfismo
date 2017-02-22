@@ -14,7 +14,7 @@ public class Principal extends Figura
         circulo.calcularArea();
         System.out.println("El area del Circulo es: "+circulo.accedeArea());
         
-        Figura [] figuras  = new Figura[3];
+        Figura [] figuras = new Figura[3];
         figuras[0] = triangulo;
         figuras[1] = cuadrado;
         figuras[2] = circulo;
@@ -23,20 +23,9 @@ public class Principal extends Figura
         {
             figuras[i].calcularArea();
         }
+        for(int i = 0; i < figuras.length;i++)
+        {
+             System.out.println("El area de la figura es: "+figuras[i].accedeArea());
+        }
     }
-    
-    /**private void metodoTriangulo()
-    {
-        
-    }
-    
-    private void metodoCuadrado()
-    {
-        
-    }
-    
-    private void metodoCirculo()
-    {
-        
-    }**/
 }
