@@ -40,7 +40,7 @@ public class Principal extends Figura
         {
             Figura fig = it.next();
             //System.out.println("El area de la figura es: "+fig.accedeArea());
-            System.out.println(""+fig.dimeInfo());
+            System.out.println(""+fig);
         }
     }
 }
