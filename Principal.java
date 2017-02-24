@@ -29,7 +29,7 @@ public class Principal extends Figura
         {
             figs.add(f);
         }
-        Iterator<Figura> it = figs.iterator();
+        /**Iterator<Figura> it = figs.iterator();
         while(it.hasNext())
         {
             Figura fig = it.next();
@@ -41,6 +41,19 @@ public class Principal extends Figura
             Figura fig = it.next();
             //System.out.println("El area de la figura es: "+fig.accedeArea());
             System.out.println(""+fig);
+        }**/
+        
+        Circulo c1 = new Circulo(3);
+        Circulo c2 = new Circulo(3);
+        Triangulo t1 = new Triangulo(4,5);
+        
+        if(c1.equals(t1))
+        {
+            System.out.println("Iguales");
+        }
+        else
+        {
+            System.out.println("Diferentes");
         }
     }
 }
