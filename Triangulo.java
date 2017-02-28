@@ -8,7 +8,7 @@ public class Triangulo extends Figura
         altura = a;
         base = b;
     }
-    
+    /**
     public void calcularArea()
     {
         area = base * altura / 2;
@@ -17,12 +17,12 @@ public class Triangulo extends Figura
     /*public String dimeInfo()
     {
         return "Triangulo " + super.dimeInfo();
-    }*/
+    }
     
     @Override
     public String toString()
     {
         //return ""+area;
         return "Circulo con area = " + super.toString();
-    }
+    }**/
 }

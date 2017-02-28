@@ -7,7 +7,7 @@ public class Cuadrado extends Figura
         lado = Lado;
     }
     
-    public void calcularArea()
+    /**public void calcularArea()
     {
         area = lado * lado;
     }
@@ -15,12 +15,12 @@ public class Cuadrado extends Figura
     /*public String dimeInfo()
     {
         return "Cuadrado " + super.dimeInfo();
-    }*/
+    }
     
     @Override
     public String toString()
     {
         //return ""+area;
         return "Cuadrado con area = " + super.toString();
-    }
+    }**/
 }

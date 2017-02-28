@@ -1,6 +1,6 @@
 public class Circulo extends Figura
 {
-    static final double pi = 3.1416; // o usar Math.PI
+    //static final double pi = 3.1416; // o usar Math.PI
     private float radio;
     
     public Circulo(float Radio)
@@ -8,16 +8,19 @@ public class Circulo extends Figura
         radio = Radio;
     }
     
-    public void calcularArea()
+    public void dibuja(Graphics g)
+    {
+    }
+    /**public void calcularArea()
     {
         area = ((float)pi) * radio * radio;
     }
     
-    /*public String dimeInfo()
+    public String dimeInfo()
     {
         //return "Circulo " + super.dimeInfo();
         return "Circulo con area = " + super.toString();
-    }*/
+    }
     
     @Override
     public String toString()
@@ -37,5 +40,5 @@ public class Circulo extends Figura
         {
             return false;
         }
-    }
+    }**/
 }
