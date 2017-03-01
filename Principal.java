@@ -1,59 +1,22 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
-public class Principal extends Figura
+public class Principal
 {
-    public static void main(String []args)
-    {
-        Triangulo triangulo = new Triangulo(5,4);
-        triangulo.calcularArea();
-        //System.out.println("El area del Triángulo es: "+triangulo.accedeArea());
+    static private Graphics g;
+    public static void main(String [] args)
+    {   
+        Triangulo tri1 = new Triangulo(100,100,5,4);
+        Cuadrado cua1 = new Cuadrado(200,100,5);
+        Circulo cir1 = new Circulo(300,100,3);
         
-        Cuadrado cuadrado = new Cuadrado(5);
-        cuadrado.calcularArea();
-        //System.out.println("El area del Cuadrado es: "+cuadrado.accedeArea());
+        ArrayList <Figura> figuras = new ArrayList<Figura>();
         
-        Circulo circulo = new Circulo(3);
-        circulo.calcularArea();
-        //System.out.println("El area del Circulo es: "+circulo.accedeArea());
-        
-        Figura [] figuras = new Figura[3];
-        figuras[0] = triangulo;
-        figuras[1] = cuadrado;
-        figuras[2] = circulo;
-     
-        ArrayList<Figura> figs;
-        figs = new ArrayList<Figura>();
-        
-        for(Figura f:figuras)
-        {
-            figs.add(f);
-        }
-        Iterator<Figura> it = figs.iterator();
-        while(it.hasNext())
-        {
-            Figura fig = it.next();
-            fig.calcularArea();
-        }
-        it = figs.iterator();
-        while(it.hasNext())
-        {
-            Figura fig = it.next();
-            //System.out.println(""+fig.accedeArea());
-            System.out.println(""+fig);
-        }
-        
-        /**Circulo c1 = new Circulo(3);
-        Circulo c2 = new Circulo(3);
-        Triangulo t1 = new Triangulo(4,5);
-        
-        if(c1.equals(t1))
-        {
-            System.out.println("Iguales");
-        }
-        else
-        {
-            System.out.println("Diferentes");
-        }**/
+        figuras.add(tri1);
+        figuras.add(cua1);
+        figuras.add(cir1);
+        cir1.dibuja(g);
     }
 }

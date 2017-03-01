@@ -1,26 +1,18 @@
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 public class Cuadrado extends Figura
 {
     private float lado;
     
-    public Cuadrado(float Lado)
+    public Cuadrado(int x, int y, float Lado)
     {
+        super(x,y);
         lado = Lado;
     }
     
-    /**public void calcularArea()
-    {
-        area = lado * lado;
-    }
-    
-    /*public String dimeInfo()
-    {
-        return "Cuadrado " + super.dimeInfo();
-    }
-    
     @Override
-    public String toString()
+    public void dibuja(Graphics g)
     {
-        //return ""+area;
-        return "Cuadrado con area = " + super.toString();
-    }**/
+        System.out.println("dibujando..");
+    }
 }

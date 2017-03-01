@@ -1,44 +1,29 @@
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Color;
 public class Circulo extends Figura
 {
-    //static final double pi = 3.1416; // o usar Math.PI
     private float radio;
+    private Graphics2D g2;
+    private int[]posx = new int[2];
+    private int[]posy = new int[2];
     
-    public Circulo(float Radio)
+    public Circulo(int x, int y, float Radio)
     {
+        super(x,y);
         radio = Radio;
+        posx[0] = 100;
+        posy[0] = 100;
+        posx[1] = 300;
+        posy[1] = 300;
     }
     
+    @Override
     public void dibuja(Graphics g)
     {
+        System.out.println("dibujando..");
+        Graphics2D g1 = (Graphics2D)g;
+        g1.setColor(Color.RED);
+        g1.drawPolyline(posx, posy, 5);
     }
-    /**public void calcularArea()
-    {
-        area = ((float)pi) * radio * radio;
-    }
-    
-    public String dimeInfo()
-    {
-        //return "Circulo " + super.dimeInfo();
-        return "Circulo con area = " + super.toString();
-    }
-    
-    @Override
-    public String toString()
-    {
-        //return ""+area;
-        return "Circulo con area = " + super.toString();
-    }
-    
-    @Override
-    public boolean equals(Object obj)
-    {
-        if(obj instanceof Circulo)
-        {
-            return this.radio == ((Circulo)obj).radio;
-        }
-        else
-        {
-            return false;
-        }
-    }**/
 }

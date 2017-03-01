@@ -1,4 +1,6 @@
 #BlueJ class context
-comment0.params=b\ a
-comment0.target=Triangulo(float,\ float)
-numComments=1
+comment0.params=x\ y\ b\ a
+comment0.target=Triangulo(int,\ int,\ float,\ float)
+comment1.params=g
+comment1.target=void\ dibuja(java.awt.Graphics)
+numComments=2

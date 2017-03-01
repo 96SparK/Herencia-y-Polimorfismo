@@ -1,28 +1,20 @@
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 public class Triangulo extends Figura
 {
     private float base;
     private float altura;
     
-    public Triangulo(float b, float a)
+    public Triangulo(int x, int y, float b, float a)
     {
+        super(x,y);
         altura = a;
         base = b;
     }
-    /**
-    public void calcularArea()
-    {
-        area = base * altura / 2;
-    }
-    
-    /*public String dimeInfo()
-    {
-        return "Triangulo " + super.dimeInfo();
-    }
     
     @Override
-    public String toString()
+    public void dibuja(Graphics g)
     {
-        //return ""+area;
-        return "Circulo con area = " + super.toString();
-    }**/
+        System.out.println("dibujando..");
+    }
 }
