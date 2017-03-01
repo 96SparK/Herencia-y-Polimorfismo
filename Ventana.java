@@ -1,4 +1,4 @@
-package Dibuja_Linea;
+ 
 
 import javax.swing.JFrame;
 

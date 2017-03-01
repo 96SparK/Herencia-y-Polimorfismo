@@ -21,7 +21,6 @@ public class Circulo extends Figura
     @Override
     public void dibuja(Graphics g)
     {
-        System.out.println("dibujando..");
         Graphics2D g1 = (Graphics2D)g;
         g1.setColor(Color.RED);
         g1.drawPolyline(posx, posy, 5);

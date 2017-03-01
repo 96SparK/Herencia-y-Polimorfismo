@@ -11,4 +11,14 @@ abstract public class Figura
     }
     
     abstract public void dibuja(Graphics g);
+    
+    protected int dimeX()
+    {
+        return posx;
+    }
+    
+    protected int dimeY()
+    {
+        return posy;
+    }
 }

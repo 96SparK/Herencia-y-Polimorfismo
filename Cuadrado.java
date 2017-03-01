@@ -13,6 +13,7 @@ public class Cuadrado extends Figura
     @Override
     public void dibuja(Graphics g)
     {
-        System.out.println("dibujando..");
+        Graphics2D g1 = (Graphics2D)g;
+        g1.drawRect(super.dimeX(),super.dimeY(),(int)lado,(int)lado);
     }
 }
