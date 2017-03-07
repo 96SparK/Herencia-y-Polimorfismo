@@ -10,15 +10,10 @@ public class Planeta
     {
         paises.add(nuevoPais);
     }
-    public int promeHabPaises()
+    public float calculaPromedio()
     {
         int promedio = 0;
-        for(int i = 0; i < paises.size(); i++)
-        {
-            Pais aux = paises.get(i);
-            promedio += aux.dimeHabitantes();
-        }
         
-        return (promedio/= paises.size());
+        return promedio;
     }
 }

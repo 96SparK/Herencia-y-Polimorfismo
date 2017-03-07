@@ -1,4 +1,4 @@
-public class CuentaBancaria
+public class CuentaBancaria implements Medible
 {
     private int saldo;
     
@@ -7,7 +7,7 @@ public class CuentaBancaria
         saldo = Saldo;
     }
     
-    public int dimeSaldo()
+    public int obtenerMedida()
     {
         return saldo;
     }

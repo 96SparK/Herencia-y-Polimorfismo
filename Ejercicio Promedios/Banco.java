@@ -13,16 +13,10 @@ public class Banco
         cuentas.add(cuenta);
     }
     
-    public float calculaSaldoProm()
+    public float calculaPromedio()
     {
         float promedio = 0;
         
-        for(int i = 0; i < cuentas.size(); i++)
-        {
-            CuentaBancaria aux = cuentas.get(i);
-            promedio += (float)aux.dimeSaldo();
-        }
-        
-        return (promedio/= cuentas.size());
+        return promedio;
     }
 }

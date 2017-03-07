@@ -2,18 +2,19 @@ public class Principal
 {
     public static void main(String [] args)
     {
-        Banco banco = new Banco();
-        banco.agregaCuenta(new CuentaBancaria (100) );
-        banco.agregaCuenta(new CuentaBancaria(200));
-        banco.agregaCuenta(new CuentaBancaria(300));
+        Medible[] arr_1 = new Medible[3];
         
-        System.out.println("Saldo promedio: "+ banco.calculaSaldoProm());
+        arr_1[0] = new CuentaBancaria(100);
+        arr_1[1] = new CuentaBancaria(200);
+        arr_1[2] = new CuentaBancaria(300);
         
-        Planeta tierra = new Planeta();
-        tierra.agregaPais(new Pais (25000000) );
-        tierra.agregaPais(new Pais(32000000));
-        tierra.agregaPais(new Pais(94000000));
+        System.out.println("Saldo promedio: "+ Utileria.calculaPromedio(arr_1));
         
-        System.out.println("Promedio de habitantes: "+ tierra.promeHabPaises());
+        Medible[] arr_2 =  new Medible[3];
+        arr_2[0] = new Pais(25);
+        arr_2[1] = new Pais(32);
+        arr_2[2] = new Pais(94);
+        
+        System.out.println("Promedio de habitantes: "+ Utileria.calculaPromedio(arr_2));
     }
 }

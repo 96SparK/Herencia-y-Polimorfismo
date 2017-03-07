@@ -4,5 +4,5 @@ comment0.target=Planeta()
 comment1.params=nuevoPais
 comment1.target=void\ agregaPais(Pais)
 comment2.params=
-comment2.target=int\ promeHabPaises()
+comment2.target=float\ calculaPromedio()
 numComments=3
