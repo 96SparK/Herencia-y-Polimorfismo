@@ -6,18 +6,19 @@ public class Planeta
     {
         paises = new ArrayList<Pais>();
     }
-    public void agregaPais(Pais unpais)
+    public void agregaPais(Pais nuevoPais)
     {
-        paises.add(unpais);
+        paises.add(nuevoPais);
     }
     public int promeHabPaises()
     {
         int promedio = 0;
         for(int i = 0; i < paises.size(); i++)
         {
-            promedio += promedio; // checar
+            Pais aux = paises.get(i);
+            promedio += aux.dimeHabitantes();
         }
         
-        return promedio;
+        return (promedio/= paises.size());
     }
 }
