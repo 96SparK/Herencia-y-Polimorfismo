@@ -5,7 +5,8 @@ import java.awt.Graphics;
 import java.awt.event.ActionListener;
 import javax.swing.Timer;
 import java.awt.event.ActionEvent;
-
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
 public class Lienzo extends JPanel
 {
     private Pelota pelota;
@@ -16,16 +17,9 @@ public class Lienzo extends JPanel
         EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
         Timer tiempo = new Timer(1000, escuchaTiempo);
         tiempo.start();
+        //this.addKeyListener(this);
     }
     
-    class EscuchadorTiempo implements ActionListener
-    {
-        @Override
-        public void actionPerformed(ActionEvent e)
-        {
-            System.out.println("Hola pelota!");
-        }
-    }
     @Override
     public void paintComponent(Graphics g)
     {
